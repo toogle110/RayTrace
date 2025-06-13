@@ -120,15 +120,15 @@ export class OctreeNode {
     static intersectsBox(bounds, center, size) {
 
         const objMin = [
-            center[0] - size[0] * 0.5,
-            center[1] - size[1] * 0.5,
-            center[2] - size[2] * 0.5
+            center[0] - size[0],
+            center[1] - size[1],
+            center[2] - size[2]
         ];
 
         const objMax = [
-            center[0] + size[0] * 0.5,
-            center[1] + size[1] * 0.5,
-            center[2] + size[2] * 0.5
+            center[0] + size[0],
+            center[1] + size[1],
+            center[2] + size[2]
         ];
 
 
