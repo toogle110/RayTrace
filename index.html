@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebGL Ray Tracing</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; width: 100vw; height: 100vh; }
+
+    #overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-family: sans-serif;
+      font-size: 16px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 6px 10px;
+      border-radius: 5px;
+      pointer-events: none; /* 不影响鼠标交互 */
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">视点旋转： WSAD     视点缩放：QE     光源旋转：IKJL     光源缩放：UO</div>
+  <canvas id="glcanvas"></canvas>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
